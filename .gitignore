@@ -1,0 +1,6 @@
+# macOS
+.DS_Store
+
+# Local intake folder for raw photos before they're added to the gallery.
+# Not part of the published site.
+/real-photos/

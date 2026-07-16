@@ -1,0 +1,54 @@
+# White Iron Design — admin panel configuration
+# NOTE: the "repo" line below is filled in during deploy, once the GitHub
+# repository exists (format: your-github-username/whiteirondesign).
+
+backend:
+  name: github
+  repo: REPLACE_WITH/your-github-username-and-repo   # e.g. austinwhite/whiteirondesign
+  branch: main
+
+# Where uploaded photos are stored in the project, and how the site links to them.
+media_folder: images/gallery
+public_folder: /images/gallery
+
+# A friendly editing experience, tuned for one non-technical owner.
+site_url: https://whiteirondesign.com
+display_url: https://whiteirondesign.com
+publish_mode: simple
+
+collections:
+  - name: gallery
+    label: Gallery
+    files:
+      - name: pieces
+        label: Gallery pieces
+        file: pieces.json
+        description: >-
+          Add, edit, reorder, or remove the pieces shown in the Work section.
+          Click "Add Piece", upload a photo, fill in the details, then Publish.
+        fields:
+          - label: Pieces
+            name: pieces
+            label_singular: Piece
+            widget: list
+            summary: "{{fields.name}}"
+            fields:
+              - { label: Name, name: name, widget: string, hint: "e.g. Sawtooth Dining Table" }
+              - label: Category
+                name: category
+                widget: select
+                default: dining
+                options:
+                  - { label: Dining table, value: dining }
+                  - { label: Coffee table, value: coffee }
+                  - { label: Side table, value: side }
+              - { label: "Details (wood, finish, base)", name: spec, widget: string, required: false, hint: "e.g. White oak · Blackened steel X-base" }
+              - { label: Description, name: description, widget: text, required: false, hint: "A sentence or two about the piece." }
+              - { label: Photo, name: image, widget: image, hint: "Any size — it's cropped to fit automatically." }
+              - label: Status
+                name: status
+                widget: select
+                default: available
+                options:
+                  - { label: Available, value: available }
+                  - { label: Sold, value: sold }

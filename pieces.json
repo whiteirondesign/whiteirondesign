@@ -1,0 +1,25 @@
+{
+  "pieces": [
+    {
+      "name": "Dining Table",
+      "category": "dining",
+      "spec": "Placeholder · real piece coming soon",
+      "image": "images/payette-table.jpg",
+      "status": "available"
+    },
+    {
+      "name": "Coffee Table",
+      "category": "coffee",
+      "spec": "Placeholder · real piece coming soon",
+      "image": "images/bitterroot-coffee-table.jpg",
+      "status": "available"
+    },
+    {
+      "name": "Side Table",
+      "category": "side",
+      "spec": "Placeholder · real piece coming soon",
+      "image": "images/bolt-side-table.jpg",
+      "status": "available"
+    }
+  ]
+}
