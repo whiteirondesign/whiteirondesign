@@ -4,8 +4,9 @@
 
 backend:
   name: github
-  repo: REPLACE_WITH/your-github-username-and-repo   # e.g. austinwhite/whiteirondesign
+  repo: whiteirondesign/whiteirondesign
   branch: main
+  base_url: https://api.netlify.com
 
 # Where uploaded photos are stored in the project, and how the site links to them.
 media_folder: images/gallery
