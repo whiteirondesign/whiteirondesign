@@ -34,18 +34,26 @@ collections:
             widget: list
             summary: "{{fields.name}}"
             fields:
-              - { label: Name, name: name, widget: string, hint: "e.g. Sawtooth Dining Table" }
+              - { label: Name, name: name, widget: string, hint: "e.g. Walnut River Desk" }
               - label: Category
                 name: category
                 widget: select
                 default: dining
                 options:
                   - { label: Dining table, value: dining }
+                  - { label: Desk, value: desk }
                   - { label: Coffee table, value: coffee }
                   - { label: Side table, value: side }
-              - { label: "Details (wood, finish, base)", name: spec, widget: string, required: false, hint: "e.g. White oak · Blackened steel X-base" }
-              - { label: Description, name: description, widget: text, required: false, hint: "A sentence or two about the piece." }
-              - { label: Photo, name: image, widget: image, hint: "Any size — it's cropped to fit automatically." }
+              - { label: "Details (wood, finish, base)", name: spec, widget: string, required: false, hint: "e.g. Oregon black walnut · Black epoxy river · Welded steel base" }
+              - { label: Dimensions, name: dimensions, widget: string, required: false, hint: "e.g. 69\" L · 29\" W · 28.5\" H" }
+              - { label: Description, name: description, widget: text, required: false, hint: "A few sentences about the piece. Shown when a visitor opens it." }
+              - { label: "Cover photo", name: image, widget: image, hint: "Shown in the gallery grid. Any size — it's cropped to fit automatically." }
+              - label: "All photos"
+                name: images
+                widget: list
+                required: false
+                hint: "Every photo of the piece, in the order visitors should see them. Include the cover photo first."
+                field: { label: Photo, name: photo, widget: image }
               - label: Status
                 name: status
                 widget: select

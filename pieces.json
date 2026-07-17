@@ -1,24 +1,19 @@
 {
   "pieces": [
     {
-      "name": "Dining Table",
-      "category": "dining",
-      "spec": "Placeholder · real piece coming soon",
-      "image": "images/payette-table.jpg",
-      "status": "available"
-    },
-    {
-      "name": "Coffee Table",
-      "category": "coffee",
-      "spec": "Placeholder · real piece coming soon",
-      "image": "images/bitterroot-coffee-table.jpg",
-      "status": "available"
-    },
-    {
-      "name": "Side Table",
-      "category": "side",
-      "spec": "Placeholder · real piece coming soon",
-      "image": "images/bolt-side-table.jpg",
+      "name": "Walnut River Desk",
+      "category": "desk",
+      "spec": "Oregon black walnut · Black epoxy river · Welded steel base",
+      "dimensions": "69\" L · 29\" W · 28.5\" H",
+      "description": "Solid Oregon black walnut with a black epoxy river running through the natural live edge. Rich grain and coloring throughout, finished by hand to bring out the wood's character. The base is custom fabricated steel, hand welded, with threaded adjustable feet that level on any surface. Solid slab construction, no veneer or plywood. Works beautifully as a desk, a smaller dining table, or an entryway piece.",
+      "image": "images/gallery/walnut-river-desk-1.jpg",
+      "images": [
+        "images/gallery/walnut-river-desk-1.jpg",
+        "images/gallery/walnut-river-desk-2.jpg",
+        "images/gallery/walnut-river-desk-3.jpg",
+        "images/gallery/walnut-river-desk-4.jpg",
+        "images/gallery/walnut-river-desk-5.jpg"
+      ],
       "status": "available"
     }
   ]
