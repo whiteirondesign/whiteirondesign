@@ -44,6 +44,20 @@
       "status": "available"
     },
     {
+      "name": "Silver Maple Coffee Table",
+      "category": "coffee",
+      "spec": "Silver maple, live edge · Steel legs, darkened patina",
+      "description": "Solid silver maple with a one of a kind live edge and natural grain throughout. Spalting and dark mineral lines run across the top, finished by hand to bring out the character of the wood. Set on tapered steel legs finished in a darkened patina under a satin clear coat, giving a raw, natural steel look that complements the wood. Threaded adjustable feet level the table on any surface.",
+      "image": "images/gallery/silver-maple-coffee-table-1.jpg",
+      "images": [
+        "images/gallery/silver-maple-coffee-table-1.jpg",
+        "images/gallery/silver-maple-coffee-table-2.jpg",
+        "images/gallery/silver-maple-coffee-table-3.jpg",
+        "images/gallery/silver-maple-coffee-table-4.jpg"
+      ],
+      "status": "available"
+    },
+    {
       "name": "Steel Frame Side Tables",
       "category": "side",
       "spec": "Walnut and honey locust tops · Welded steel frames · Set of two",
