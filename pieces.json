@@ -15,6 +15,44 @@
         "images/gallery/walnut-river-desk-5.jpg"
       ],
       "status": "available"
+    },
+    {
+      "name": "Elm Slab Coffee Table",
+      "category": "coffee",
+      "spec": "Live edge elm · Black epoxy seam · Steel sled base",
+      "description": "A single elm slab with a natural live edge and a black epoxy seam running down the center. The edges are left raw so the slab keeps its history in plain view, every knot and burl exactly where the tree put it. The top is finished by hand to bring out the grain and sits on U-style steel sled legs, fabricated and finished in the shop.",
+      "image": "images/gallery/elm-coffee-table-1.jpg",
+      "images": [
+        "images/gallery/elm-coffee-table-1.jpg",
+        "images/gallery/elm-coffee-table-2.jpg",
+        "images/gallery/elm-coffee-table-3.jpg",
+        "images/gallery/elm-coffee-table-4.jpg"
+      ],
+      "status": "available"
+    },
+    {
+      "name": "Idaho Walnut Coffee Table",
+      "category": "coffee",
+      "spec": "Locally sourced walnut · Live edge · Steel sled base",
+      "description": "Walnut sourced locally in Boise, Idaho, milled and finished by hand. The slab keeps its natural live edge and the deep chocolate figure walnut is known for. Set on U-style steel sled legs, fabricated and finished in the shop. Solid slab construction, no veneer or plywood.",
+      "image": "images/gallery/walnut-coffee-table-1.jpg",
+      "images": [
+        "images/gallery/walnut-coffee-table-1.jpg",
+        "images/gallery/walnut-coffee-table-2.jpg",
+        "images/gallery/walnut-coffee-table-3.jpg"
+      ],
+      "status": "available"
+    },
+    {
+      "name": "Steel Frame Side Tables",
+      "category": "side",
+      "spec": "Walnut and honey locust tops · Welded steel frames · Set of two",
+      "description": "A pair of side tables built around hand welded steel frames with an X brace on each face. One top is walnut, the other honey locust, each set flush into the steel. Fabricated and finished by hand in the shop.",
+      "image": "images/gallery/steel-side-tables-1.jpg",
+      "images": [
+        "images/gallery/steel-side-tables-1.jpg"
+      ],
+      "status": "available"
     }
   ]
 }
