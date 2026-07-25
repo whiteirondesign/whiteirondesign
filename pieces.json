@@ -17,6 +17,20 @@
       "status": "available"
     },
     {
+      "name": "Oak Dining Table",
+      "category": "dining",
+      "spec": "Solid oak slab · Blue epoxy fill · Steel X-frame base",
+      "description": "A single solid oak slab with its natural cracks and checks filled in blue epoxy, left exactly where the tree made them. The top is finished by hand to bring out the grain and sits on a steel X-frame base, fabricated and finished in the shop. Solid slab construction, no veneer or plywood.",
+      "image": "images/gallery/oak-dining-table-1.jpg",
+      "images": [
+        "images/gallery/oak-dining-table-1.jpg",
+        "images/gallery/oak-dining-table-2.jpg",
+        "images/gallery/oak-dining-table-3.jpg",
+        "images/gallery/oak-dining-table-4.jpg"
+      ],
+      "status": "available"
+    },
+    {
       "name": "Elm Slab Coffee Table",
       "category": "coffee",
       "spec": "Live edge elm · Black epoxy seam · Steel sled base",
