@@ -1,6 +1,4 @@
 # White Iron Design — admin panel configuration
-# NOTE: the "repo" line below is filled in during deploy, once the GitHub
-# repository exists (format: your-github-username/whiteirondesign).
 
 backend:
   name: github
@@ -8,11 +6,10 @@ backend:
   branch: main
   base_url: https://api.netlify.com
 
-# Where uploaded photos are stored in the project, and how the site links to them.
+# Where uploaded photos are stored, and how the site links to them.
 media_folder: images/gallery
-public_folder: /images/gallery
+public_folder: images/gallery
 
-# A friendly editing experience, tuned for one non-technical owner.
 site_url: https://whiteirondesign.com
 display_url: https://whiteirondesign.com
 publish_mode: simple
@@ -25,8 +22,9 @@ collections:
         label: Gallery pieces
         file: pieces.json
         description: >-
-          Add, edit, reorder, or remove the pieces shown in the Work section.
-          Click "Add Piece", upload a photo, fill in the details, then Publish.
+          The pieces shown in the Work section. Click "Add Piece", upload your
+          photos, fill in the details, then Publish. The first photo is the one
+          shown in the grid.
         fields:
           - label: Pieces
             name: pieces
@@ -34,26 +32,47 @@ collections:
             widget: list
             summary: "{{fields.name}}"
             fields:
-              - { label: Name, name: name, widget: string, hint: "e.g. Walnut River Desk" }
+              - label: Name
+                name: name
+                widget: string
+                hint: "e.g. Oak Dining Table"
+
               - label: Category
                 name: category
                 widget: select
-                default: dining
+                default: coffee
                 options:
                   - { label: Dining table, value: dining }
                   - { label: Desk, value: desk }
                   - { label: Coffee table, value: coffee }
                   - { label: Side table, value: side }
-              - { label: "Details (wood, finish, base)", name: spec, widget: string, required: false, hint: "e.g. Oregon black walnut · Black epoxy river · Welded steel base" }
-              - { label: Dimensions, name: dimensions, widget: string, required: false, hint: "e.g. 69\" L · 29\" W · 28.5\" H" }
-              - { label: Description, name: description, widget: text, required: false, hint: "A few sentences about the piece. Shown when a visitor opens it." }
-              - { label: "Cover photo", name: image, widget: image, hint: "Shown in the gallery grid. Any size — it's cropped to fit automatically." }
-              - label: "All photos"
+                hint: "Sets which filter button the piece shows up under."
+
+              - label: "Details line"
+                name: spec
+                widget: string
+                required: false
+                hint: "Wood, feature, base. e.g. Solid oak slab · Black epoxy fill · Steel X-frame base"
+
+              - label: Dimensions
+                name: dimensions
+                widget: string
+                required: false
+                hint: "Optional. e.g. 69\" L · 29\" W · 28.5\" H"
+
+              - label: Description
+                name: description
+                widget: text
+                required: false
+                hint: "A few sentences about the piece."
+
+              - label: Photos
                 name: images
                 widget: list
-                required: false
-                hint: "Every photo of the piece, in the order visitors should see them. Include the cover photo first."
                 field: { label: Photo, name: photo, widget: image }
+                required: false
+                hint: "The first photo is the cover shown in the grid. Any size works, it gets cropped to fit."
+
               - label: Status
                 name: status
                 widget: select

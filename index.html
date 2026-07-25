@@ -443,12 +443,15 @@ function initFilters() {
 // gallery is built from pieces.json so it can be managed from the admin panel
 const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 let piecesData = [];
+// the first photo is the cover; `image` is still honoured for older entries
+const photosOf = p => (Array.isArray(p.images) && p.images.length ? p.images : (p.image ? [p.image] : []));
+const coverOf = p => photosOf(p)[0] || '';
 function galleryTile(p, i) {
   const subject = encodeURIComponent('Inquiry: ' + (p.name || 'a piece'));
   const spec = p.spec ? `<span class="p-spec">${esc(p.spec)}</span>` : '';
   const sold = p.status === 'sold' ? `<span class="p-spec">Sold</span>` : '';
   return `<figure class="piece rv" data-cat="${esc(p.category)}" data-idx="${i}">
-        <div class="ph"><img src="${esc(p.image)}" loading="lazy" alt="${esc(p.name || 'Gallery piece')}"></div>
+        <div class="ph"><img src="${esc(coverOf(p))}" loading="lazy" alt="${esc(p.name || 'Gallery piece')}"></div>
         <figcaption>
           <span class="p-name">${esc(p.name)}</span>
           ${spec}${sold}
@@ -465,7 +468,7 @@ let pushedPiece = false; // true only when we added the history entry ourselves
 
 function renderPiece(p) {
   const subject = encodeURIComponent('Inquiry: ' + (p.name || 'a piece'));
-  const photos = (Array.isArray(p.images) && p.images.length ? p.images : [p.image])
+  const photos = photosOf(p)
     .map(src => `<div class="ph"><img src="${esc(src)}" alt="${esc(p.name || 'Piece photo')}"></div>`).join('');
   const meta = [
     p.spec ? `<span>${esc(p.spec)}</span>` : '',
